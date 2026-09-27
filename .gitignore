@@ -1,0 +1,46 @@
+# Operational evidence and mutable local state
+2026/
+backend/ocr_cache.json
+backend/ai_cache.json
+backend/ai_settings.json
+backend/thresholds.json
+backend/verifications.json
+backend/audit.jsonl
+
+# Python environments and generated files
+backend/.venv/
+**/__pycache__/
+*.py[cod]
+backend/build/
+backend/dist/
+backend/*.spec
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/tsconfig.tsbuildinfo
+.pnpm-store/
+
+# Static UI copied into the backend by the release build
+backend/out/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs, reports, and temporary files
+*.log
+reports/
+tmp/
+temp/
+
+
+# Large model weights and local LLM runtime (download separately; see README)
+backend/easyocr_models/*.pth
+models/
+runtime/
+*.gguf
